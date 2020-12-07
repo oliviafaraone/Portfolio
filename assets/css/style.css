@@ -21,8 +21,8 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;
+    position: sticky; */
     top: 0;
     background-size: cover;
     background-position: 80%;
@@ -131,7 +131,7 @@ header {
  text-align: right;
  align-items: flex-end;
  flex: auto;
- border-right: 2px solid black;
+ /* border-right: 2px solid black; */
  padding-right: 20px;
  margin-left: 50px;
 }
@@ -162,91 +162,95 @@ header {
     flex:1;
   }
 
-  .aboutme h2{
-   /* font-size: 30px;
-   width: 20%;
-   text-align: right;
-   align-items: flex-end;
-   flex: auto; */
-   border-right: none;
-  }
-
   .about-det{
-    margin: 10px;
+    margin: 20px;
     padding-left: 20px;
     border-left: 2px solid black;
-    width: 75%;
+    width: 70%;
     display: flex;
     position: relative;
 
 }
   /* Work */
 .grid-container{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-gap: 10px;
-grid-auto-flow: dense;
+  margin: 20px;
+  padding-left: 20px;
+  border-left: 2px solid black;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-flow: dense;
 }
 
+
 .grid-item{
-  margin:10px;
-  padding:30px;
+  margin:5px;
+  padding:40px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  border: 5px;
-  /* border-radius: ; */
-  background-color: rgb(145, 229, 145);
-
-  /* width:100%;
-    min-height: 300px;
-
-    padding: 15px;
-    align-items: flex-end;
-    position: relative; */
+  border: 5px solid rgb(187, 225, 240);
+  display:block;
 }
 
 .grid-item h3{
-
+ background-color: rgb(187, 225, 240);
+ font-size: 25px;
 }
 
 .grid-item h4{
-
+  background-color: rgb(187, 225, 240);
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0%
 }
 .item1{
-background-image: url("./runbuddy.png") ;
+background-image: url("./runbuddy.png")  ;
+opacity: 0.6;
 background-size: cover;
 grid-column: 1/ span 2;
 grid-row: 1/ span 2;
 }
 
 .item2{
-background-image: url("./runbuddy.png") ;
+background-image: url("./LEDwall.png") ;
 background-size: cover;
+opacity: 0.6;
 }
 
 .item3{
-  background-image: url("./runbuddy.png") ;
+  background-image: url("./CodeRefractor.png") ;
   background-size: cover;
+  opacity: 0.6;
 }
 
 .item4{
-  background-image: url("./runbuddy.png") ;
+  background-image: url("./pastelpuzzles.png") ;
   background-size: cover;
+  opacity: 0.6;
 }
 
 .item5{
-  background-image: url("./runbuddy.png") ;
+  background-image: url("./surfreport.png") ;
   background-size: cover;
+  opacity: 0.6;
 }
+
+.grid-item:hover {
+  opacity: 1;
+  
+}
+
   /* Contact Me */
 
   .con{
-    padding: 20px ;
+
+    padding-left: 20px;
     margin: 20px;
-    border-bottom: 2px solid black;
-    width: 25%;
+    border-left: 2px solid black;
+    width: 70%;
     display: flex;
     position: relative;
     justify-content: center;
@@ -254,16 +258,11 @@ background-size: cover;
     
   }
 
-  /* .con1{
+  .con1,.con2,.con3{
     padding: 20px 10px;
+    border-bottom: 2px solid black;
+    padding: 20px ;
+    margin: 20px;
   }
-
-  .con2{
-    padding: 20px 20px;
-  }
-
-  .con3{
-    padding: 20px 5px;
-  } */
 
   /* Resume */
